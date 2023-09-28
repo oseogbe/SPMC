@@ -13,8 +13,17 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'primary': '#cee3d1',
+        'secondary-light': '#3c8e48',
+        'secondary-dark': '#0b721a',
+        'light-blue': '#f6fdfd'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+    require('tailwindcss-textshadow'),
+  ],
 }
 export default config
