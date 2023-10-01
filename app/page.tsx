@@ -1,5 +1,6 @@
 import AboutUs from './components/AboutUs'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import OurTeam from './components/OurTeam'
@@ -20,6 +21,7 @@ export default function Home() {
         <OurTeam />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }
