@@ -2,31 +2,31 @@
 
 const Contact = () => {
     return (
-        <div className="w-full max-w-7xl mx-auto pt-16">
-            <img className="mx-auto h-[100%]" src="/img/contact-divider.svg" alt="divider" />
-            <div className="relative px-10 py-12">
-                <div className="grid grid-cols-2 gap-8">
-                    <div className="flex flex-col lg:mt-16 lg:p-9 bg-white border shadow-sm rounded-t-xl overflow-hidden">
+        <div className="w-full max-w-7xl mx-auto pt-8 lg:pt-16">
+            <img className="mx-auto h-1.5 lg:h-[100%]" src="/img/contact-divider.svg" alt="divider" />
+            <div className="relative px-5 lg:px-10 py-6 lg:py-12">
+                <div className="grid lg:grid-cols-2 gap-8">
+                    <div className="flex flex-col lg:mt-16 p-5 lg:p-9 bg-white border shadow-sm rounded-t-xl overflow-hidden">
                         <div className="flex items-center">
-                            <img src="/img/location-marker.svg" alt="" />
-                            <div className="ml-4">
-                                <h4 className="text-3xl text-secondary-dark font-black">Get In Touch</h4>
-                                <img className="mt-2" src="/img/contact-3-lines.svg" alt="" />
+                            <img className="h-9 lg:h-full" src="/img/location-marker.svg" alt="" />
+                            <div className="ml-2 lg:ml-4">
+                                <h4 className="text-lg lg:text-3xl text-secondary-dark font-black">Get In Touch</h4>
+                                <img className="h-3 lg:h-6 mt-2" src="/img/contact-3-lines.svg" alt="" />
                             </div>
                         </div>
-                        <p className="mt-7 text-xl">Lorem ipsum dolor sit amet consectetur. Turpis amet et elementum in vestibulum leo. Tortor quisque malesuada sed nunc platea eget habitasse.</p>
-                        <div className="mt-9 space-y-9">
-                            <div className="flex items-center space-x-6">
-                                <img src="/img/map-marker.svg" alt="" />
-                                <p className="text-xl">Plot 3703 - 3704 Babangida Boulevard, Maitama Abuja, Nigeria</p>
+                        <p className="mt-7 text-sm lg:text-xl">Lorem ipsum dolor sit amet consectetur. Turpis amet et elementum in vestibulum leo. Tortor quisque malesuada sed nunc platea eget habitasse.</p>
+                        <div className="mt-5 lg:mt-9 space-y-5 lg:space-y-9">
+                            <div className="flex items-center space-x-3 lg:space-x-6">
+                                <img className="w-8 lg:w-[56px]" src="/img/map-marker.svg" alt="" />
+                                <p className="text-sm lg:text-xl">Plot 3703 - 3704 Babangida Boulevard, Maitama Abuja, Nigeria</p>
                             </div>
-                            <div className="flex items-center space-x-6">
-                                <img src="/img/telephone.svg" alt="" />
-                                <p className="text-xl">+234 818 153 5915</p>
+                            <div className="flex items-center space-x-3 lg:space-x-6">
+                                <img className="w-8 lg:w-[56px]" src="/img/telephone.svg" alt="" />
+                                <p className="text-sm lg:text-xl">+234 818 153 5915</p>
                             </div>
-                            <div className="flex items-center space-x-6">
-                                <img src="/img/mailbox.svg" alt="" />
-                                <p className="text-xl">adnan.adeosun@sariuspalmetum.com</p>
+                            <div className="flex items-center space-x-3 lg:space-x-6">
+                                <img className="w-8 lg:w-[56px]" src="/img/mailbox.svg" alt="" />
+                                <p className="text-sm lg:text-xl">adnan.adeosun@sariuspalmetum.com</p>
                             </div>
                         </div>
                     </div>

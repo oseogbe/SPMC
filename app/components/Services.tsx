@@ -11,7 +11,7 @@ const Services = () => {
                 <div className="mt-6 lg:mt-12 text-center">
                     <h3 className={rufina.className + " text-secondary-light text-3xl lg:text-5xl font-bold"}>Our Services</h3>
                 </div>
-                <div className="grid lg:grid-cols-3 gap-8 px-10 mt-6 lg:mt-16">
+                <div className="grid lg:grid-cols-3 gap-8 px-5 lg:px-10 mt-6 lg:mt-16">
                     <div className="service-box">
                         <img className="w-[60px] lg:w-16 mx-auto" src="/img/service-icon.svg" alt="" />
                         <div className="text-center">
