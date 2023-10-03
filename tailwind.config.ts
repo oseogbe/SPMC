@@ -23,7 +23,9 @@ const config: Config = {
   },
   plugins: [
     require('tailwind-scrollbar')({ nocompatible: true }),
+    require('tailwind-scrollbar-hide'),
     require('tailwindcss-textshadow'),
+    require("tailwindcss-inner-border"),
   ],
 }
 export default config
