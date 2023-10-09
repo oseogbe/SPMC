@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Rufina } from "next/font/google"
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
 const rufina = Rufina({ subsets: ['latin'], weight: "700" })
@@ -21,10 +22,10 @@ const AboutUs = () => {
                         <img className="h-[280px] lg:h-full" src="img/vertical-divider.svg" alt="divider" />
                         <div className="pl-5 lg:px-10">
                             <p className="text-sm lg:text-2xl text-justify mt-6 lg:mt-8">
-                                Ajoke Muhammed, one of Nigeria's previous first ladies, is now dedicated to protecting indigenous flora, notably the West African country's numerous palm tree varieties. She began her career as a dental therapist. Her spouse raised fish, aquatic snakes, and birds, but she developed her own passion for nature after he died, when she moved into a new house with a garden.
+                                Ajoke Muhammed, one of Nigeria&apos;s previous first ladies, is now dedicated to protecting indigenous flora, notably the West African country&apos;s numerous palm tree varieties. She began her career as a dental therapist. Her spouse raised fish, aquatic snakes, and birds, but she developed her own passion for nature after he died, when she moved into a new house with a garden.
                             </p>
                             <div className="mt-8 lg:mt-12">
-                                <button className="bg-secondary-light text-white text-base lg:text-xl font-semibold py-2 lg:py-3 w-full rounded lg:rounded-lg">Learn more <FaArrowRight className="inline-flex h-4 w-4 lg:h-5 lg:w-5" /></button>
+                                <Link href="/about/our-founder"><button className="bg-secondary-light text-white text-base lg:text-xl font-semibold py-2 lg:py-3 w-full rounded lg:rounded-lg">Learn more <FaArrowRight className="inline-flex h-4 w-4 lg:h-5 lg:w-5" /></button></Link>
                             </div>
                         </div>
                     </div>
@@ -42,7 +43,7 @@ const AboutUs = () => {
                                     The Sarius Palmetum Botanical Garden is situated in a Maitama neighborhood. There are now over 1,000 different plant species, including approximately 450 palm species, in addition to those popular in Nigeria, such as the oil and coconut palm, and others like Bismarckia, golden, and royal palm.
                                 </p>
                                 <div className="mt-8 lg:mt-12">
-                                    <button className="bg-secondary-light text-white text-base lg:text-xl font-semibold py-2 lg:py-3 w-full rounded lg:rounded-lg">Learn more <FaArrowRight className="inline-flex h-4 w-4 lg:h-5 lg:w-5" /></button>
+                                    <Link href="/about/botanical-garden"><button className="bg-secondary-light text-white text-base lg:text-xl font-semibold py-2 lg:py-3 w-full rounded lg:rounded-lg">Learn more <FaArrowRight className="inline-flex h-4 w-4 lg:h-5 lg:w-5" /></button></Link>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inclusive_Sans } from 'next/font/google'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 const is = Inclusive_Sans({ subsets: ['latin'], weight: "400" })
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={is.className}>{children}</body>
+      <body className={is.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
