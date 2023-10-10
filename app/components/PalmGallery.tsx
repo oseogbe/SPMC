@@ -74,16 +74,10 @@ const PalmGallery = () => {
                 forceToAxis: true,
             },
             // pagination: true,
+            loop: true,
             autoplay: {
                 delay: 5000, // Autoplay interval in milliseconds (3 seconds in this example)
             },
-            injectStyles: [
-                `
-                .swiper-wrapper {
-                    margin-top: 24px;
-                }
-                `
-            ],
         };
 
         Object.assign(swiperContainer, params);
@@ -98,9 +92,37 @@ const PalmGallery = () => {
                     <h3 className={rufina.className + " text-secondary-light text-3xl lg:text-5xl font-bold"}>Palm Gallery</h3>
                 </div>
 
-                {/* <div className="flex overflow-x-scroll scrollbar-hide gap-x-8 mt-6 lg:mt-16">
+                <div className='mt-6 lg:hidden border shadow-sm overflow-hidden rounded-xl'>
+                    <swiper-container
+                        ref={swiperElRef}
+                        init="false"
+                    >
+                        {palmTrees.map((tree, i) => (
+                            <swiper-slide key={i}>
+                                <div key={i} className="relative group min-w-full h-[420px] hover:shadow-lg transition">
+                                    <img
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                                        src={tree.image}
+                                        alt="Palm Image"
+                                    />
+                                    <div className="absolute bottom-0 bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                                        <h3 className="text-lg font-bold text-secondary-light">
+                                            {tree.name}
+                                        </h3>
+                                        <p className="mt-1 text-gray-800 dark:text-gray-400">
+                                            {tree.info}
+                                        </p>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                        ))}
+                    </swiper-container>
+                </div>
+
+
+                <div className="hidden lg:grid lg:grid-cols-3 gap-8 lg:px-10 mt-16">
                     {palmTrees.map((tree, i) => (
-                        <div key={i} className="relative group min-w-full h-[420px] lg:h-[460px] border shadow-sm overflow-hidden rounded-xl hover:shadow-lg transition">
+                        <div key={i} className="relative group h-[460px] border shadow-sm overflow-hidden rounded-xl hover:shadow-lg transition">
                             <img
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                                 src={tree.image}
@@ -116,52 +138,7 @@ const PalmGallery = () => {
                             </div>
                         </div>
                     ))}
-                </div> */}
-
-                <swiper-container
-                    ref={swiperElRef}
-                    init="false"
-                >
-                    {palmTrees.map((tree, i) => (
-                        <swiper-slide key={i}>
-                            <div key={i} className="relative group min-w-full h-[420px] lg:h-[460px] border shadow-sm overflow-hidden rounded-xl hover:shadow-lg transition">
-                                <img
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-                                    src={tree.image}
-                                    alt="Palm Image"
-                                />
-                                <div className="absolute bottom-0 bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                                    <h3 className="text-lg font-bold text-secondary-light">
-                                        {tree.name}
-                                    </h3>
-                                    <p className="mt-1 text-gray-800 dark:text-gray-400">
-                                        {tree.info}
-                                    </p>
-                                </div>
-                            </div>
-                        </swiper-slide>
-                    ))}
-                </swiper-container>
-
-                {/* <div className="grid lg:grid-cols-3 gap-8 lg:px-10 mt-6 lg:mt-16">
-                        {palmTrees.map((tree, i) => (
-                            <div key={i} className="relative group h-[460px] border shadow-sm overflow-hidden rounded-xl hover:shadow-lg transition">
-                                <img
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-                                    src={tree.image}
-                                    alt="Palm Image"
-                                />
-                                <div className="absolute bottom-0 bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                                    <h3 className="text-lg font-bold text-secondary-light">
-                                        {tree.name}
-                                    </h3>
-                                    <p className="mt-1 text-gray-800 dark:text-gray-400">
-                                        {tree.info}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div> */}
+                </div>
 
                 {/* <a className="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition" href="#">
                         <div className="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
