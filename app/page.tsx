@@ -22,7 +22,12 @@ export default function Home() {
         <OurTeam />
         <Contact />
         <Socials />
-        <ScrollToTop smooth top={1000} color='#3C8E48' className='!rounded-full lg:!w-16 lg:!h-16 flex justify-center items-center !bg-[#E7F1E9] !right-5 lg:!right-8 !bottom-14' />
+        <ScrollToTop
+          smooth
+          top={1000}
+          color='#3C8E48'
+          className='scroll-to-top'
+        />
       </main>
     </div>
   )

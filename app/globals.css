@@ -28,4 +28,8 @@
     .service-box {
         @apply p-6 bg-[#E7F1E9] text-primary;
     }
+
+    .scroll-to-top {
+        @apply !rounded-full lg:!w-16 lg:!h-16 flex justify-center items-center !bg-[#E7F1E9] !right-5 lg:!right-8 !bottom-14;
+    }
 }
