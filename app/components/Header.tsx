@@ -1,7 +1,12 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const Header = () => {
+    const pathname = usePathname()
+
     return (
         <header className="fixed top-0 z-50 w-full bg-white shadow transition-all duration-500">
             <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
@@ -15,10 +20,10 @@ const Header = () => {
                         className="lg:-ml-4"
                     />
                 </Link>
-                <ul className="hidden text-lg text-secondary-dark space-x-8 md:flex md:text-xl">
-                    <li><Link href="/">home</Link></li>
-                    <li><Link href="/about/management-company">about us</Link></li>
-                    <li>palm gallery</li>
+                <ul className="hidden text-lg text-primary space-x-8 md:flex md:text-xl">
+                    <li><Link className={`header-link ${pathname === '/' ? 'active' : ''}`} href="/">home</Link></li>
+                    <li><Link className={`header-link ${pathname === '/about/management-company' ? 'active' : ''}`} href="/about/management-company">about us</Link></li>
+                    <li><Link className={`header-link ${pathname === '/palm-gallery' ? 'active' : ''}`} href="/palm-gallery">palm gallery</Link></li>
                 </ul>
             </div>
         </header>

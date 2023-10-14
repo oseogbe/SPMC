@@ -9,7 +9,7 @@ const Services = () => {
             <img className="mx-auto w-[80%]" src="/img/divider.svg" alt="divider" />
             <div className="relative">
                 <div className="mt-6 lg:mt-12 text-center">
-                    <h3 className={rufina.className + " text-secondary-light text-3xl lg:text-5xl font-bold"}>Our Services</h3>
+                    <h3 className={rufina.className + " text-secondary text-3xl lg:text-5xl font-bold"}>Our Services</h3>
                 </div>
                 <div className="grid lg:grid-cols-3 gap-8 px-5 lg:px-10 mt-6 lg:mt-16">
                     <div className="service-box">

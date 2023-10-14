@@ -19,25 +19,25 @@ const Footer = () => {
                         <div className="grid lg:grid-cols-2 gap-y-6 lg:gap-y-7 mt-6 lg:mt-8 lg:text-lg text-white">
                             <div className="flex items-center">
                                 <img src="/img/ninja-star.svg" alt="" />
-                                <Link className="ml-1" href=''>About The Company</Link>
+                                <Link className="ml-1" href='#'>About The Company</Link>
                             </div>
                             <div className="flex items-center">
                                 <img src="/img/ninja-star.svg" alt="" />
-                                <Link className="ml-1" href=''>About Our Pioneer</Link>
+                                <Link className="ml-1" href='#'>About Our Pioneer</Link>
                             </div>
                             <div className="flex items-center">
                                 <img src="/img/ninja-star.svg" alt="" />
-                                <Link className="ml-1" href=''>Our Palm Tree Gallery</Link>
+                                <Link className="ml-1" href='#'>Our Palm Tree Gallery</Link>
                             </div>
                             <div className="flex items-center">
                                 <img src="/img/ninja-star.svg" alt="" />
-                                <Link className="ml-1" href=''>Make An Enquiry</Link>
+                                <Link className="ml-1" href='#'>Make An Enquiry</Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="h-9 bg-[#E7F1E9] flex items-center justify-center text-center text-sm lg:text-base text-secondary-light">
+            <div className="h-9 bg-[#E7F1E9] flex items-center justify-center text-center text-sm lg:text-base text-secondary">
                 <p>Copyright © 2023 Sarius Palmetum & Botanical Garden</p>
             </div>
         </>

@@ -8,7 +8,7 @@
     }
 
     body {
-        @apply !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-secondary-light;
+        @apply !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-secondary;
     }
 
     video {
@@ -17,7 +17,15 @@
 }
 
 @layer components {
+    .header-link {
+        @apply transition duration-300 hover:pb-6 hover:border-b-4 hover:border-b-primary;
+    }
+
+    .active {
+        @apply pb-6 border-b-4 border-b-primary;
+    }
+
     .service-box {
-        @apply p-6 bg-[#E7F1E9] text-secondary-dark;
+        @apply p-6 bg-[#E7F1E9] text-primary;
     }
 }

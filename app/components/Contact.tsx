@@ -10,7 +10,7 @@ const Contact = () => {
                         <div className="flex items-center">
                             <img className="h-9 lg:h-full" src="/img/location-marker.svg" alt="" />
                             <div className="ml-2 lg:ml-4">
-                                <h4 className="text-lg lg:text-3xl text-secondary-dark font-black">Get In Touch</h4>
+                                <h4 className="text-lg lg:text-3xl text-primary font-black">Get In Touch</h4>
                                 <img className="h-3 lg:h-6 mt-2" src="/img/contact-3-lines.svg" alt="" />
                             </div>
                         </div>

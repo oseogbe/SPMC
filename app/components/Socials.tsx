@@ -4,7 +4,7 @@ import React from 'react'
 const Socials = () => {
     return (
         <div className="pt-16 -mt-48">
-            <div className="bg-secondary-dark lg:pt-40 lg:pb-20 rounded-t-3xl lg:rounded-t-[100px]">
+            <div className="bg-primary lg:pt-40 lg:pb-20 rounded-t-3xl lg:rounded-t-[100px]">
                 <div className="w-full max-w-7xl mx-auto px-5 lg:px-10">
                     {/* <div className="grid grid-cols-2 lg:grid-cols-4 h-20"> */}
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-0 mt-12 lg:mt-0 pt-24 pb-12 lg:py-0">
