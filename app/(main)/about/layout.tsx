@@ -1,5 +1,5 @@
-import Contact from "../components/Contact"
-import Socials from "../components/Socials"
+import Contact from "../../components/Contact"
+import Socials from "../../components/Socials"
 
 export default function AboutLayout({
     children

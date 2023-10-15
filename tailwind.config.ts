@@ -20,6 +20,9 @@ const config: Config = {
       },
       padding: {
         18: '72px'
+      },
+      gridTemplateRows: {
+        '9': 'repeat(9, minmax(0, 1fr))',
       }
     },
   },

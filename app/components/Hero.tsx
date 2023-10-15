@@ -1,4 +1,10 @@
+"use client"
+
+import { useRouter } from "next/navigation"
+
 const Hero = () => {
+    const router = useRouter()
+
     return (
         <div>
             <video autoPlay loop muted>
@@ -11,7 +17,7 @@ const Hero = () => {
                         <p className="mt-6 text-lg lg:text-2xl text-white text-shadow-md">Discover the glamour and elegance of the tropics with our extensive selection of stunning palm trees, <br className="hidden lg:block" />perfectly suited for any landscape or garden project.</p>
                         <div className="mt-8 flex items-center justify-center space-x-4">
                             <button className="bg-secondary text-white text-lg lg:text-2xl font-semibold px-8 py-4 lg:px-12 lg:py-5 rounded lg:rounded-lg">Explore Now</button>
-                            <button className="bg-transparent text-white inner-border border-white text-lg lg:text-2xl font-semibold px-8 py-4 lg:px-12 lg:py-5 rounded lg:rounded-lg">Contact Us</button>
+                            <button className="bg-transparent text-white inner-border border-white text-lg lg:text-2xl font-semibold px-8 py-4 lg:px-12 lg:py-5 rounded lg:rounded-lg" onClick={() => router.push('/contact-us')}>Contact Us</button>
                         </div>
                     </div>
                 </div>
