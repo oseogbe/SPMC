@@ -20,7 +20,7 @@ export default function ContactLayout({
     return (
         <html lang="en">
             <body className={is.className}>
-                <div className='absolute h-screen w-full bg-gradient-to-r from-[#DF6500] to-[#E4D200] clip-img bg-no-repeat'></div>
+                <div className='absolute h-screen w-full bg-gradient-to-r from-[#DF6500] to-[#E4D200] bg-no-repeat clip-bg-contact'></div>
                 <div className="h-screen flex items-center justify-center">
                     <ContactHeader />
                     {children}

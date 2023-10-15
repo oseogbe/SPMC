@@ -31,8 +31,12 @@
 }
 
 @layer utilities {
-    .clip-img {
+    .clip-bg-contact {
         clip-path: polygon(0 0, 0% 100%, 100% 0);
+    }
+
+    .clip-contact-info {
+        clip-path: polygon(100% 75%, 24% 100%, 100% 100%);
     }
 
     .active {
