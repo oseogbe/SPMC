@@ -20,11 +20,11 @@ export default function ContactLayout({
     return (
         <html lang="en">
             <body className={is.className}>
-                <div className='absolute h-screen w-full bg-gradient-to-r from-[#DF6500] to-[#E4D200] bg-no-repeat clip-bg-contact'></div>
-                <div className="h-screen flex items-center justify-center">
+                <div className='hidden lg:block lg:absolute lg:h-screen w-full bg-gradient-to-r from-[#DF6500] to-[#E4D200] bg-no-repeat clip-bg-contact'></div>
+                <div className="pt-28 lg:pt-0 lg:h-screen flex items-center justify-center">
                     <ContactHeader />
                     {children}
-                    <img className="absolute bottom-12 mt-8 w-[70%]" src="/img/divider.svg" alt="divider" />
+                    {/* <img className="absolute bottom-12 mt-8 w-[70%]" src="/img/divider.svg" alt="divider" /> */}
                 </div>
                 <Footer />
             </body>

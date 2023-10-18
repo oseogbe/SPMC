@@ -39,7 +39,7 @@
 
     .contact-input:focus + label,
     .contact-input:not(:placeholder-shown) + label {
-        @apply -top-6 text-sm text-[#828282];
+        @apply -top-4 lg:-top-6 text-xs lg:text-sm text-[#828282];
     }
 }
 
