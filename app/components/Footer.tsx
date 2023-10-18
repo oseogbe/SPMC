@@ -4,7 +4,7 @@ import Link from "next/link"
 const Footer = () => {
     return (
         <>
-            <div className="bg-[#06390D] py-9 lg:py-12">
+            <div className="bg-dark-green py-9 lg:py-12">
                 <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto px-10">
                     <div className="flex-1 pr-8 lg:pr-16">
                         <h3 className="text-lg lg:text-2xl text-white font-bold">About Sarius Palmetum Botanical Garden</h3>

@@ -28,6 +28,19 @@
     .scroll-to-top {
         @apply !rounded-full lg:!w-16 lg:!h-16 flex justify-center items-center !bg-[#E7F1E9] !right-5 lg:!right-8 !bottom-14;
     }
+
+    .contact-input-label {
+        @apply absolute left-0 top-2 transition-all duration-300 text-gray-600;
+    }
+
+    .contact-input {
+        @apply w-full py-2 text-sm lg:text-base text-dark-green font-medium border-b-2 border-[#CCDDDD] outline-none opacity-50 focus:border-primary transition duration-300;
+    }
+
+    .contact-input:focus + label,
+    .contact-input:not(:placeholder-shown) + label {
+        @apply -top-6 text-sm text-[#828282];
+    }
 }
 
 @layer utilities {

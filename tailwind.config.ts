@@ -16,7 +16,8 @@ const config: Config = {
       colors: {
         'primary': '#0b721a',
         'secondary': '#3c8e48',
-        'light-blue': '#f6fdfd'
+        'light-blue': '#f6fdfd',
+        'dark-green': '#06390D'
       },
       padding: {
         18: '72px'
