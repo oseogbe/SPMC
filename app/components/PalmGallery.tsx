@@ -2,6 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef } from 'react';
+import { useRouter } from "next/navigation"
 import { register } from 'swiper/element/bundle';
 import { Rufina } from "next/font/google"
 import { FaArrowRight } from 'react-icons/fa';
@@ -45,6 +46,7 @@ const palmTrees = [
 
 const PalmGallery = () => {
     const swiperElRef = useRef(null);
+    const router = useRouter();
 
     useEffect(() => {
         const swiperContainer = swiperElRef.current;
@@ -154,7 +156,10 @@ const PalmGallery = () => {
                         </div>
                     </a> */}
                 <div className="mt-12 flex items-center justify-center">
-                    <button className="bg-secondary text-white text-lg lg:text-xl font-semibold py-2 lg:py-3 min-w-[300px] w-full lg:w-[30%] rounded lg:rounded-lg">
+                    <button
+                        className="bg-secondary text-white text-lg lg:text-xl font-semibold py-2 lg:py-3 min-w-[300px] w-full lg:w-[30%] rounded lg:rounded-lg"
+                        onClick={() => router.push('/palm-species')}
+                    >
                         See all <FaArrowRight className="inline-flex h-5 w-5" />
                     </button>
                 </div>

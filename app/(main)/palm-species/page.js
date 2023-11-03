@@ -1,8 +1,9 @@
 "use client"
 
 /* eslint-disable @next/next/no-img-element */
-import { Rufina } from "next/font/google"
 import { useState } from "react";
+import { Rufina } from "next/font/google"
+import { Pagination } from "@mui/material";
 
 const rufina = Rufina({ subsets: ['latin'], weight: "700" })
 
@@ -108,7 +109,7 @@ const palmTrees = [
     },
 ]
 
-const PalmGallery = () => {
+const PalmSpecies = () => {
     const [selectedOption, setSelectedOption] = useState(null);
 
     const handleRadioChange = (event) => {
@@ -118,7 +119,7 @@ const PalmGallery = () => {
     return (
         <div className="pt-18">
             <div className="w-full py-5 lg:py-10 bg-primary">
-                <h3 className={rufina.className + " text-xl lg:text-5xl text-white text-center"}>Palm Gallery</h3>
+                <h3 className={rufina.className + " text-xl lg:text-5xl text-white text-center"}>Palm Species</h3>
             </div>
             <div className="w-full max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row px-5 lg:px-0 lg:mt-16 lg:mb-9">
@@ -129,8 +130,8 @@ const PalmGallery = () => {
                             <input
                                 type="text"
                                 id="search-input"
-                                className="w-full py-3 px-4 text-primary font-medium border-2 border-primary/50 rounded-lg outline-none placeholder:text-primary transition duration-300"
-                                placeholder="Palm Tree..."
+                                className="w-full py-3 pl-4 pr-10 text-primary font-medium border-2 border-primary/50 focus:border-primary/50 rounded-lg outline-none focus:ring-0 placeholder:text-primary transition duration-300"
+                                placeholder="Find a Palm Tree"
                             />
                             <img className="w-6 h-6 absolute bottom-3.5 right-4" src="/img/search.svg" alt="search" />
                         </div>
@@ -177,9 +178,12 @@ const PalmGallery = () => {
                     ))}
                 </div>
                 <img className="mx-auto my-8 lg:my-16 w-[80%]" src="/img/divider.svg" alt="divider" />
+                <div className="flex justify-center lg:mb-16">
+                    <Pagination count={10} variant="outlined" shape="rounded" size="large" />
+                </div>
             </div>
         </div>
     )
 }
 
-export default PalmGallery
+export default PalmSpecies

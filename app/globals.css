@@ -34,7 +34,7 @@
     }
 
     .contact-input {
-        @apply w-full py-2 text-sm lg:text-base text-dark-green font-medium border-b-2 border-[#CCDDDD] outline-none opacity-50 focus:border-primary transition duration-300;
+        @apply w-full py-2 text-sm lg:text-base text-dark-green font-medium border-0 border-b-2 border-[#CCDDDD] outline-none opacity-50 focus:px-0 focus:border-0 focus:border-b focus:border-b-primary focus:ring-0 transition duration-300;
     }
 
     .contact-input:focus + label,

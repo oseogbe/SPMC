@@ -23,7 +23,7 @@ const ContactHeader = () => {
                 <ul className="hidden text-lg text-primary space-x-8 md:flex md:text-xl">
                     <li><Link className={`header-link ${pathname === '/' ? 'active' : ''}`} href="/">home</Link></li>
                     <li><Link className={`header-link ${pathname === '/about/management-company' ? 'active' : ''}`} href="/about/management-company">about us</Link></li>
-                    <li><Link className={`header-link ${pathname === '/palm-gallery' ? 'active' : ''}`} href="/palm-gallery">palm gallery</Link></li>
+                    <li><Link className={`header-link ${pathname === '/palm-species' ? 'active' : ''}`} href="/palm-species">palm gallery</Link></li>
                 </ul>
             </div>
         </header>
