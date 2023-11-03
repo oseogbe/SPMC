@@ -18,7 +18,7 @@
 
 @layer components {
     .header-link {
-        @apply transition duration-300 hover:pb-6 hover:border-b-4 hover:border-b-primary;
+        @apply transition duration-300 hover:pb-6 hover:border-b-4 hover:border-b-primary/70;
     }
 
     .service-box {
@@ -40,6 +40,10 @@
     .contact-input:focus + label,
     .contact-input:not(:placeholder-shown) + label {
         @apply -top-4 lg:-top-6 text-xs lg:text-sm text-[#828282];
+    }
+
+    .form-radio {
+        @apply w-6 h-6 focus:bg-primary/80 text-primary border-2 border-primary focus:ring-0 focus:ring-offset-0;
     }
 }
 
