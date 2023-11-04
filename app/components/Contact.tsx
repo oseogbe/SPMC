@@ -22,11 +22,11 @@ const Contact = () => {
                             </div>
                             <div className="flex items-center space-x-3 lg:space-x-6">
                                 <img className="w-8 lg:w-[56px]" src="/img/telephone.svg" alt="" />
-                                <p className="text-sm lg:text-xl">+234 818 153 5915</p>
+                                <p className="text-sm lg:text-xl">+234 (913) 714-2755</p>
                             </div>
                             <div className="flex items-center space-x-3 lg:space-x-6">
                                 <img className="w-8 lg:w-[56px]" src="/img/mailbox.svg" alt="" />
-                                <p className="text-sm lg:text-xl">adnan.adeosun@sariuspalmetum.com</p>
+                                <p className="text-sm lg:text-xl">info@sariuspalmetum.com</p>
                             </div>
                         </div>
                     </div>

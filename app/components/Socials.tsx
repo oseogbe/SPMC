@@ -12,7 +12,9 @@ const Socials = () => {
                             <img className="h-6 lg:h-full" src="/img/facebook.svg" alt="SPMC Facebook" />
                         </div>
                         <div className="flex items-center justify-center py-4 lg:py-6 bg-[#6DAA76]">
-                            <img className="h-6 lg:h-full" src="/img/instagram.svg" alt="SPMC Instagram" />
+                            <a href='https://www.instagram.com/sariuspalmetumbotanicalgarden/' target='blank'>
+                                <img className="h-6 lg:h-full" src="/img/instagram.svg" alt="SPMC Instagram" />
+                            </a>
                         </div>
                         <div className="flex items-center justify-center py-4 lg:py-6 bg-[#3C8E48]">
                             <img className="h-6 lg:h-full" src="/img/twitter.svg" alt="SPMC Twitter" />

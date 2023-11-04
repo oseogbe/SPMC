@@ -13,7 +13,7 @@ const Header = () => {
                 <Link href="/">
                     <Image
                         src="/img/spmc-logo.svg"
-                        alt="Salrius Palmetum Logo"
+                        alt="Sarius Palmetum Logo"
                         width={150}
                         height={150}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

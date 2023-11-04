@@ -13,7 +13,7 @@ const ContactHeader = () => {
                 <Link href="/">
                     <Image
                         src="/img/spmc-logo.svg"
-                        alt="Salrius Palmetum Logo"
+                        alt="Sarius Palmetum Logo"
                         width={150}
                         height={150}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -21,9 +21,10 @@ const ContactHeader = () => {
                     />
                 </Link>
                 <ul className="hidden text-lg text-primary space-x-8 md:flex md:text-xl">
-                    <li><Link className={`header-link ${pathname === '/' ? 'active' : ''}`} href="/">home</Link></li>
-                    <li><Link className={`header-link ${pathname === '/about/management-company' ? 'active' : ''}`} href="/about/management-company">about us</Link></li>
-                    <li><Link className={`header-link ${pathname === '/palm-species' ? 'active' : ''}`} href="/palm-species">palm gallery</Link></li>
+                    <li><Link className={`header-link ${pathname === '/' ? 'active' : ''}`} href="/">Home</Link></li>
+                    <li><Link className={`header-link ${pathname === '/about/management-company' ? 'active' : ''}`} href="/about/management-company">About Us</Link></li>
+                    <li><Link className={`header-link ${pathname === '/gallery' ? 'active' : ''}`} href="/gallery">Our Gallery</Link></li>
+                    <li><Link className={`header-link ${pathname === '/palm-species' ? 'active' : ''}`} href="/palm-species">Palm Species</Link></li>
                 </ul>
             </div>
         </header>

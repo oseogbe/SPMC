@@ -14,10 +14,10 @@ const BotanicalGarden = () => {
                     <div className="relative mt-8 lg:mt-16 lg:px-[8%] grid grid-rows-7 grid-cols-7">
                         <img className="absolute hidden lg:block h-full top-0 bottom-0 -z-10" src="/img/ellipse-right.svg" alt="" />
                         <div className="row-start-1 row-end-5 col-start-1 col-end-5">
-                            <img className="w-full object-cover" src="/img/spmc-1.png" alt="Salrius Palmetum Botanical Garden" />
+                            <img className="w-full object-cover" src="/img/spmc-1.png" alt="Sarius Palmetum Botanical Garden" />
                         </div>
                         <div className="row-start-2 row-end-7 col-start-4 col-end-8 z-10">
-                            <img className="w-full object-cover" src="/img/spmc-2.png" alt="Salrius Palmetum Botanical Garden" />
+                            <img className="w-full object-cover" src="/img/spmc-2.png" alt="Sarius Palmetum Botanical Garden" />
                         </div>
                         <img className="absolute hidden lg:block lg:h-full right-0 -z-10" src="/img/ellipse-left.svg" alt="" />
                     </div>

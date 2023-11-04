@@ -8,7 +8,7 @@ const is = Inclusive_Sans({ subsets: ['latin'], weight: "400" })
 
 export const metadata: Metadata = {
   title: 'SPMC',
-  description: 'Salrius Palmetum Management Company',
+  description: 'Sarius Palmetum Management Company',
 }
 
 export default function RootLayout({

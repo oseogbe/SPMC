@@ -9,7 +9,7 @@ const ContactUs = () => {
                     <div className="mt-7 lg:mt-12 space-y-5 lg:space-y-6">
                         <div className="flex items-center space-x-3">
                             <img className="w-6 lg:w-8" src="/img/call.svg" alt="" />
-                            <p className="text-sm lg:text-xl text-dark-green font-medium">+234 (816) 574-8910</p>
+                            <p className="text-sm lg:text-xl text-dark-green font-medium">+234 (913) 714-2755</p>
                         </div>
                         <div className="flex items-center space-x-3">
                             <img className="w-6 lg:w-8" src="/img/location.svg" alt="" />
@@ -17,7 +17,9 @@ const ContactUs = () => {
                         </div>
                     </div>
                     <div className="flex items-center space-x-6 pl-1 mt-8 lg:mt-12">
-                        <img className="w-5 lg:w-6" src="/img/instagram-icon.svg" alt="spmc instagram" />
+                        <a href='https://www.instagram.com/sariuspalmetumbotanicalgarden/' target='blank'>
+                            <img className="w-5 lg:w-6" src="/img/instagram-icon.svg" alt="spmc instagram" />
+                        </a>
                         <img className="w-5 lg:w-6" src="/img/facebook-icon.svg" alt="spmc facebook" />
                         <img className="w-5 lg:w-6" src="/img/linkedin-icon.svg" alt="spmc linkedin" />
                         <img className="w-5 lg:w-6" src="/img/twitter-icon.svg" alt="spmc twitter" />

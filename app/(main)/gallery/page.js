@@ -3,6 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Rufina } from "next/font/google"
 import { Pagination } from "@mui/material";
+import ScrollToTop from "react-scroll-to-top";
 
 const rufina = Rufina({ subsets: ['latin'], weight: "700" })
 
@@ -21,6 +22,12 @@ const Gallery = () => {
                     <Pagination count={10} variant="outlined" shape="rounded" size="large" />
                 </div>
             </div>
+            <ScrollToTop
+                smooth
+                top={1000}
+                color='#3C8E48'
+                className='scroll-to-top'
+            />
         </div>
     )
 }
