@@ -1,13 +1,12 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useRef } from 'react';
 import { useRouter } from "next/navigation"
-import { register } from 'swiper/element/bundle';
 import { Rufina } from "next/font/google"
 import { FaArrowRight } from 'react-icons/fa';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-register();
+import 'swiper/css';
 
 const rufina = Rufina({ subsets: ['latin'], weight: "700" })
 
@@ -45,46 +44,7 @@ const palmTrees = [
 ]
 
 const PalmGallery = () => {
-    const swiperElRef = useRef(null);
     const router = useRouter();
-
-    useEffect(() => {
-        const swiperContainer = swiperElRef.current;
-
-        const params = {
-            grabCursor: false,
-            slidesPerView: 1,
-            spaceBetween: 40,
-            breakpoints: {
-                // small screens
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 40,
-                },
-                // medium screens
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 50,
-                },
-                // normal laptop screens
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 60,
-                },
-            },
-            mousewheel: {
-                forceToAxis: true,
-            },
-            // pagination: true,
-            loop: true,
-            autoplay: {
-                delay: 5000, // Autoplay interval in milliseconds (3 seconds in this example)
-            },
-        };
-
-        Object.assign(swiperContainer, params);
-        swiperContainer.initialize();
-    }, []);
 
     return (
         <div className="w-full max-w-7xl mx-auto pt-16">
@@ -95,12 +55,39 @@ const PalmGallery = () => {
                 </div>
 
                 <div className='mt-6 lg:hidden border shadow-sm overflow-hidden rounded-xl'>
-                    <swiper-container
-                        ref={swiperElRef}
-                        init="false"
+                    <Swiper
+                        grabCursor={false}
+                        slidesPerView={1}
+                        spaceBetween={40}
+                        breakpoints={{
+                            // small screens
+                            640: {
+                                slidesPerView: 1,
+                                spaceBetween: 40,
+                            },
+                            // medium screens
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 50,
+                            },
+                            // normal laptop screens
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 60,
+                            },
+                        }}
+                        mousewheel={{
+                            forceToAxis: true,
+                        }}
+                        // pagination: true,
+                        loop={true}
+                        autoplay={{
+                            delay: 5000, // Autoplay interval in milliseconds (3 seconds in this example)
+                        }}
+                        init={false}
                     >
                         {palmTrees.map((tree, i) => (
-                            <swiper-slide key={i}>
+                            <SwiperSlide key={i}>
                                 <div key={i} className="relative group min-w-full h-[420px] hover:shadow-lg transition">
                                     <img
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
@@ -116,11 +103,10 @@ const PalmGallery = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </swiper-slide>
+                            </SwiperSlide>
                         ))}
-                    </swiper-container>
+                    </Swiper>
                 </div>
-
 
                 <div className="hidden lg:grid lg:grid-cols-3 gap-8 lg:px-10 mt-16">
                     {palmTrees.map((tree, i) => (
