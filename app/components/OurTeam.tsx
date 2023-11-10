@@ -7,23 +7,23 @@ const OurTeam = () => {
 
     const teamMembers = [
         {
-            name: "Sam Nolan",
-            role: "Partner/CEO",
+            name: "Mrs. Ajoke Murtala Muhammad",
+            role: "Chairman",
+            image: "/img/team/ajoke-murtala.jpg"
+        },
+        {
+            name: "Adnan Adeosun",
+            role: "CEO",
+            image: "/img/team/adnan-adeosun.jpg"
+        },
+        {
+            name: "Egbo Chinonso P.",
+            role: "Head of Operation",
             image: "/img/team/user1.png"
         },
         {
-            name: "Helen Tunde",
-            role: "General Manager",
-            image: "/img/team/user2.png"
-        },
-        {
-            name: "Sam Nolan",
-            role: "Partner/CEO",
-            image: "/img/team/user1.png"
-        },
-        {
-            name: "Helen Tunde",
-            role: "General Manager",
+            name: "Ajogbor Arotimme E.",
+            role: "Head of Admin",
             image: "/img/team/user2.png"
         },
     ]
