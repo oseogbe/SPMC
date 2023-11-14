@@ -7,6 +7,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
+import { useEffect, useState } from "react";
 
 const rufina = Rufina({ subsets: ['latin'], weight: "700" })
 
@@ -14,37 +15,67 @@ const palmTrees = [
     {
         name: "Sabal palmetto",
         info: "Sabal palmetto, also known as cabbage palm is one of 15 species of palmetto palm. It is native to the Southern United States, the Yucatán Peninsula in Mexico, and the West Indies.",
-        image: "/img/trees/beach-2178747_1280.jpg"
+        image: "/img/trees/t1.jpg",
+        imageSmall: "/img/trees/t1-small.jpg",
     },
     {
         name: "Sabal palmetto",
         info: "Sabal palmetto, also known as cabbage palm is one of 15 species of palmetto palm. It is native to the Southern United States, the Yucatán Peninsula in Mexico, and the West Indies.",
-        image: "/img/trees/beach-2178747_1280.jpg"
+        image: "/img/trees/t2.jpg",
+        imageSmall: "/img/trees/t2-small.jpg",
     },
     {
         name: "Sabal palmetto",
         info: "Sabal palmetto, also known as cabbage palm is one of 15 species of palmetto palm. It is native to the Southern United States, the Yucatán Peninsula in Mexico, and the West Indies.",
-        image: "/img/trees/beach-2178747_1280.jpg"
+        image: "/img/trees/t3.jpg",
+        imageSmall: "/img/trees/t3-small.jpg",
     },
     {
         name: "Sabal palmetto",
         info: "Sabal palmetto, also known as cabbage palm is one of 15 species of palmetto palm. It is native to the Southern United States, the Yucatán Peninsula in Mexico, and the West Indies.",
-        image: "/img/trees/beach-2178747_1280.jpg"
+        image: "/img/trees/t4.jpg",
+        imageSmall: "/img/trees/t4-small.jpg",
     },
     {
         name: "Sabal palmetto",
         info: "Sabal palmetto, also known as cabbage palm is one of 15 species of palmetto palm. It is native to the Southern United States, the Yucatán Peninsula in Mexico, and the West Indies.",
-        image: "/img/trees/beach-2178747_1280.jpg"
+        image: "/img/trees/t5.jpg",
+        imageSmall: "/img/trees/t5-small.jpg",
     },
     {
         name: "Sabal palmetto",
         info: "Sabal palmetto, also known as cabbage palm is one of 15 species of palmetto palm. It is native to the Southern United States, the Yucatán Peninsula in Mexico, and the West Indies.",
-        image: "/img/trees/beach-2178747_1280.jpg"
+        image: "/img/trees/t6.jpg",
+        imageSmall: "/img/trees/t6-small.jpg",
     },
 ]
 
 const PalmGallery = () => {
+    const [loaded, setLoaded] = useState(false);
     const router = useRouter();
+
+    const handleImageLoad = () => {
+        setLoaded(true);
+    };
+
+    useEffect(() => {
+        const blurredImageDiv: HTMLDivElement | null = document.querySelector(".blurred-img");
+
+        if (blurredImageDiv) {
+            const img: HTMLImageElement | null = blurredImageDiv.querySelector("img");
+            if (img) {
+                if (img.complete) {
+                    handleImageLoad();
+                } else {
+                    img.addEventListener("load", handleImageLoad);
+
+                    return () => {
+                        img.removeEventListener("load", handleImageLoad);
+                    };
+                }
+            }
+        }
+    }, []);
 
     return (
         <div className="w-full max-w-7xl mx-auto pt-16">
@@ -89,18 +120,21 @@ const PalmGallery = () => {
                         {palmTrees.map((tree, i) => (
                             <SwiperSlide key={i}>
                                 <div key={i} className="relative group min-w-full h-[420px] hover:shadow-lg transition">
-                                    <img
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-                                        src={tree.image}
-                                        alt="Palm Image"
-                                    />
-                                    <div className="absolute bottom-0 bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                                        <h3 className="text-lg font-bold text-secondary">
-                                            {tree.name}
-                                        </h3>
-                                        <p className="mt-1 text-gray-800 dark:text-gray-400">
-                                            {tree.info}
-                                        </p>
+                                    <div className={`blurred-img ${loaded ? 'loaded' : ''}`} style={{ backgroundImage: `url(${tree.imageSmall})` }}>
+                                        <img
+                                            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                                            src={tree.image}
+                                            alt={`Palm Tree ${tree.name}`}
+                                            loading="lazy"
+                                        />
+                                        <div className="absolute bottom-0 bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                                            <h3 className="text-lg font-bold text-secondary">
+                                                {tree.name}
+                                            </h3>
+                                            <p className="mt-1 text-gray-800 dark:text-gray-400">
+                                                {tree.info}
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -111,18 +145,21 @@ const PalmGallery = () => {
                 <div className="hidden lg:grid lg:grid-cols-3 gap-8 lg:px-10 mt-16">
                     {palmTrees.map((tree, i) => (
                         <div key={i} className="relative group h-[460px] border shadow-sm overflow-hidden rounded-xl hover:shadow-lg transition">
-                            <img
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-                                src={tree.image}
-                                alt="Palm Image"
-                            />
-                            <div className="absolute bottom-0 bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                                <h3 className="text-lg font-bold text-secondary">
-                                    {tree.name}
-                                </h3>
-                                <p className="mt-1 text-gray-800 dark:text-gray-400">
-                                    {tree.info}
-                                </p>
+                            <div className={`blurred-img ${loaded ? 'loaded' : ''}`} style={{ backgroundImage: `url(${tree.imageSmall})` }}>
+                                <img
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                                    src={tree.image}
+                                    alt={`Palm Tree ${tree.name}`}
+                                    loading="lazy"
+                                />
+                                <div className="absolute bottom-0 bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                                    <h3 className="text-lg font-bold text-secondary">
+                                        {tree.name}
+                                    </h3>
+                                    <p className="mt-1 text-gray-800 dark:text-gray-400">
+                                        {tree.info}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     ))}

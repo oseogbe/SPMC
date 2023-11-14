@@ -10,6 +10,8 @@ import Quotes from '../components/Quotes'
 import Services from '../components/Services'
 import Socials from '../components/Socials'
 
+import './gallery.css'
+
 export default function Home() {
   return (
     <div>
