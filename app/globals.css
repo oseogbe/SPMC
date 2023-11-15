@@ -18,7 +18,7 @@
 
 @layer components {
     .header-link {
-        @apply transition duration-300 hover:pb-6 hover:border-b-4 hover:border-b-primary/70;
+        @apply transition duration-300 md:hover:pb-6 md:hover:border-b-4 md:hover:border-b-primary/70;
     }
 
     .service-box {
@@ -57,6 +57,6 @@
     }
 
     .active {
-        @apply pb-6 border-b-4 border-b-primary;
+        @apply pb-2 md:pb-6 border-b-2 md:border-b-4 border-b-primary;
     }
 }
