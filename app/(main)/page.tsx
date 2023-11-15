@@ -28,7 +28,7 @@ export default function Home() {
           smooth
           top={1000}
           color='#3C8E48'
-          className='scroll-to-top hidden sm:block'
+          className='scroll-to-top'
         />
       </main>
     </div>

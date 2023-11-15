@@ -26,7 +26,7 @@
     }
 
     .scroll-to-top {
-        @apply !rounded-full lg:!w-16 lg:!h-16 flex justify-center items-center !bg-[#E7F1E9] !right-5 lg:!right-8 !bottom-14;
+        @apply lg:!w-16 lg:!h-16 !hidden md:!flex justify-center items-center !bg-[#E7F1E9] !right-5 lg:!right-8 !bottom-14 !rounded-full;
     }
 
     .contact-input-label {
@@ -44,10 +44,6 @@
 
     .form-radio {
         @apply w-6 h-6 focus:bg-primary/80 text-primary border-2 border-primary focus:ring-0 focus:ring-offset-0;
-    }
-
-    .scroll-to-top {
-        @apply !flex;
     }
 }
 

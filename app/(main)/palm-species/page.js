@@ -164,7 +164,7 @@ const PalmSpecies = () => {
             </div>
             <div className="w-full max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row px-5 lg:px-0 lg:mt-16 lg:mb-9">
-                    <div className="lg:flex-1 lg:px-10">
+                    <div className="mt-8 lg:mt-0 lg:flex-1 lg:px-10">
                         <h5 className="text-primary lg:text-3xl lg:font-medium">Search Here</h5>
                         <img className="h-3 lg:h-6 mt-2 lg:mt-4" src="/img/contact-3-lines.svg" alt="" />
                         <div className="relative mt-9 lg:w-4/5">
@@ -177,7 +177,7 @@ const PalmSpecies = () => {
                             <img className="w-6 h-6 absolute bottom-3.5 right-4" src="/img/search.svg" alt="search" />
                         </div>
                     </div>
-                    <div className="lg:flex-1 lg:px-10">
+                    <div className="mt-8 lg:mt-0 lg:flex-1 lg:px-10">
                         <h5 className="text-primary lg:text-3xl lg:font-medium">Sort By</h5>
                         <img className="h-3 lg:h-6 mt-2 lg:mt-4" src="/img/contact-3-lines.svg" alt="" />
                         <div className="mt-9">
@@ -199,7 +199,7 @@ const PalmSpecies = () => {
                     </div>
                 </div>
                 <img className="mx-auto my-8 lg:my-16 w-[80%]" src="/img/divider.svg" alt="divider" />
-                <div className="hidden lg:grid lg:grid-cols-3 gap-8 lg:px-10 my-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-5 lg:px-10 my-16">
                     {palmTrees.map((tree, i) => (
                         <div key={i} className="relative group h-[460px] border shadow-sm overflow-hidden rounded-xl hover:shadow-lg transition">
                             <div className={`blurred-img ${loaded ? 'loaded' : ''}`} style={{ backgroundImage: `url(${tree.imageSmall})` }}>
@@ -222,7 +222,12 @@ const PalmSpecies = () => {
                     ))}
                 </div>
                 <img className="mx-auto my-8 lg:my-16 w-[80%]" src="/img/divider.svg" alt="divider" />
-                <div className="flex justify-center lg:mb-16">
+
+                <div className="flex justify-center px-5 mb-8 md:hidden">
+                    <Pagination count={10} variant="outlined" shape="rounded" size="medium" />
+                </div>
+
+                <div className="hidden md:flex justify-center md:mb-16">
                     <Pagination count={10} variant="outlined" shape="rounded" size="large" />
                 </div>
             </div>
@@ -230,7 +235,7 @@ const PalmSpecies = () => {
                 smooth
                 top={1000}
                 color='#3C8E48'
-                className='scroll-to-top hidden sm:block'
+                className='scroll-to-top'
             />
         </div>
     )
