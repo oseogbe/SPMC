@@ -45,6 +45,10 @@
     .form-radio {
         @apply w-6 h-6 focus:bg-primary/80 text-primary border-2 border-primary focus:ring-0 focus:ring-offset-0;
     }
+
+    .scroll-to-top {
+        @apply !flex;
+    }
 }
 
 @layer utilities {

@@ -230,7 +230,7 @@ const PalmSpecies = () => {
                 smooth
                 top={1000}
                 color='#3C8E48'
-                className='scroll-to-top'
+                className='scroll-to-top hidden sm:block'
             />
         </div>
     )
