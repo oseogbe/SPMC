@@ -158,8 +158,8 @@ const PalmSpecies = () => {
     }, []);
 
     return (
-        <div className="pt-18">
-            <div className="w-full py-5 lg:py-10 bg-primary">
+        <div className="pt-20">
+            <div className="w-full py-8 lg:py-10 bg-primary">
                 <h3 className={rufina.className + " text-xl lg:text-5xl text-white text-center"}>Palm Species</h3>
             </div>
             <div className="w-full max-w-7xl mx-auto">

@@ -9,8 +9,8 @@ const rufina = Rufina({ subsets: ['latin'], weight: "700" })
 
 const Gallery = () => {
     return (
-        <div className="pt-18">
-            <div className="w-full py-5 lg:py-10 bg-primary">
+        <div className="pt-20">
+            <div className="w-full py-8 lg:py-10 bg-primary">
                 <h3 className={rufina.className + " text-xl lg:text-5xl text-white text-center"}>Our Gallery</h3>
             </div>
             <div className="w-full max-w-7xl mx-auto">
@@ -18,7 +18,11 @@ const Gallery = () => {
 
                 </div>
                 <img className="mx-auto my-8 lg:my-16 w-[80%]" src="/img/divider.svg" alt="divider" />
-                <div className="flex justify-center lg:mb-16">
+                <div className="flex justify-center px-5 mb-8 md:hidden">
+                    <Pagination count={10} variant="outlined" shape="rounded" size="medium" />
+                </div>
+
+                <div className="hidden md:flex justify-center md:mb-16">
                     <Pagination count={10} variant="outlined" shape="rounded" size="large" />
                 </div>
             </div>
