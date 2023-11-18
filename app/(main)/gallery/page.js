@@ -1,11 +1,9 @@
 "use client"
-
 /* eslint-disable @next/next/no-img-element */
-import { Rufina } from "next/font/google"
+
+import { rufina } from "@/app/fonts";
 import { Pagination } from "@mui/material";
 import ScrollToTop from "react-scroll-to-top";
-
-const rufina = Rufina({ subsets: ['latin'], weight: "700" })
 
 const Gallery = () => {
     return (

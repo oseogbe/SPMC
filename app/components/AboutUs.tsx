@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { Rufina } from "next/font/google"
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
-
-const rufina = Rufina({ subsets: ['latin'], weight: "700" })
+import { rufina } from "../fonts";
 
 const AboutUs = () => {
     return (

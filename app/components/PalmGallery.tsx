@@ -1,15 +1,12 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation"
-import { Rufina } from "next/font/google"
+import { rufina } from "../fonts";
 import { FaArrowRight } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
-import { useEffect, useState } from "react";
-
-const rufina = Rufina({ subsets: ['latin'], weight: "700" })
 
 const palmTrees = [
     {

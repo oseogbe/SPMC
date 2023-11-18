@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Rufina } from "next/font/google"
-
-const rufina = Rufina({ subsets: ['latin'], weight: "700" })
+import { rufina } from "@/app/fonts"
 
 const OurFounder = () => {
     return (

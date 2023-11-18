@@ -2,12 +2,10 @@
 
 /* eslint-disable @next/next/no-img-element */
 import { useState, useEffect } from "react";
-import { Rufina } from "next/font/google"
+import { rufina } from "@/app/fonts";
 import { Pagination } from "@mui/material";
 import ScrollToTop from 'react-scroll-to-top'
 import '../gallery.css'
-
-const rufina = Rufina({ subsets: ['latin'], weight: "700" })
 
 const sortByValues = [
     "Alphabet A-D",

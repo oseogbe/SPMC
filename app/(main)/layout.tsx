@@ -1,10 +1,8 @@
 import '../globals.css'
 import type { Metadata } from 'next'
-import { Inclusive_Sans } from 'next/font/google'
+import { is } from '../fonts'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-
-const is = Inclusive_Sans({ subsets: ['latin'], weight: "400" })
 
 export const metadata: Metadata = {
   title: 'SPMC',
