@@ -6,11 +6,31 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Transition } from "@headlessui/react"
 import classNames from "classnames"
+import clsx from "clsx"
 
 const Header = () => {
-    const pathname = usePathname()
+    const pathname = usePathname();
 
     const [isOpen, setIsOpen] = useState(false);
+
+    const links = [
+        {
+            name: "Home",
+            href: "/"
+        },
+        {
+            name: "About Us",
+            href: "/about/management-company"
+        },
+        {
+            name: "Our Gallery",
+            href: "/gallery"
+        },
+        {
+            name: "Palm Species",
+            href: "/palm-species"
+        },
+    ];
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -37,10 +57,16 @@ const Header = () => {
                     />
                 </Link>
                 <ul className="hidden text-lg text-primary space-x-8 md:flex md:text-xl">
-                    <li><Link className={`header-link ${pathname === '/' ? 'active' : ''}`} href="/">Home</Link></li>
-                    <li><Link className={`header-link ${pathname === '/about/management-company' ? 'active' : ''}`} href="/about/management-company">About Us</Link></li>
-                    <li><Link className={`header-link ${pathname === '/gallery' ? 'active' : ''}`} href="/gallery">Our Gallery</Link></li>
-                    <li><Link className={`header-link ${pathname === '/palm-species' ? 'active' : ''}`} href="/palm-species">Palm Species</Link></li>
+                    {
+                        links.map((link) => (
+                            <li key={link.name}>
+                                <Link
+                                    href={link.href}
+                                    className={clsx('header-link', { 'active': pathname === link.href })}
+                                >{link.name}</Link>
+                            </li>
+                        ))
+                    }
                 </ul>
                 {/* Hamburger Icon */}
                 <button type="button" className="pr-5 md:hidden text-gray-500 hover:text-gray-600" onClick={toggleMenu}>
@@ -80,11 +106,24 @@ const Header = () => {
 
                             {/* Navigation Links */}
                             <ul className="flex flex-col text-center text-lg text-primary space-y-8">
-                                <li><Link onClick={toggleMenu} className={`header-link ${pathname === '/' ? 'active' : ''}`} href="/">Home</Link></li>
-                                <li><Link onClick={toggleMenu} className={`header-link ${pathname === '/about/management-company' ? 'active' : ''}`} href="/about/management-company">About Us</Link></li>
-                                <li><Link onClick={toggleMenu} className={`header-link ${pathname === '/gallery' ? 'active' : ''}`} href="/gallery">Our Gallery</Link></li>
-                                <li><Link onClick={toggleMenu} className={`header-link ${pathname === '/palm-species' ? 'active' : ''}`} href="/palm-species">Palm Species</Link></li>
-                                <li><Link onClick={toggleMenu} className={`header-link ${pathname === '/contact-us' ? 'active' : ''}`} href="/contact-us">Contact Us</Link></li>
+                                {
+                                    links.map((link) => (
+                                        <li key={link.name}>
+                                            <Link
+                                                href={link.href}
+                                                onClick={toggleMenu}
+                                                className={clsx('header-link', { 'active': pathname === link.href })}
+                                            >{link.name}</Link>
+                                        </li>
+                                    ))
+                                }
+                                <li>
+                                    <Link
+                                        href="/contact-us"
+                                        onClick={toggleMenu}
+                                        className={clsx('header-link', { 'active': pathname === "/contact-us" })}
+                                    >Contact Us</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
