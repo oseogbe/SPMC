@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { rufina } from "@/app/fonts"
+import Image from "next/image"
 
 const OurTeam = () => {
 
@@ -22,7 +23,7 @@ const OurTeam = () => {
         {
             name: "Ajogbor Arotimme E.",
             role: "Head of Admin",
-            image: "/img/team/user2.png"
+            image: "/img/team/ajogbor-arotimme.jpg"
         },
     ]
 
@@ -36,7 +37,12 @@ const OurTeam = () => {
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 mt-6 lg:mt-16">
                     {teamMembers.map((member, i) => (
                         <a key={i} className="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition" href="#">
-                            <img src={member.image} alt="" />
+                            <Image
+                                width={300}
+                                height={300}
+                                src={member.image}
+                                alt={member.name}
+                            />
                             <div className="p-4 md:p-5 text-center">
                                 <h5 className="text-xs lg:text-lg font-bold text-secondary">
                                     {member.role}
