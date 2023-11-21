@@ -3,9 +3,13 @@ import { rufina } from "@/app/fonts"
 
 const OurFounder = () => {
     return (
-        <div className="pt-20">
-            <div className="w-full py-8 lg:py-10 bg-primary">
-                <h3 className={rufina.className + " text-xl lg:text-5xl text-white text-center"}>About Our Founder</h3>
+        <div className="pt-[84px] lg:pt-18">
+            <div className="relative w-full h-24 lg:h-32">
+                <div className="absolute inset-0 flex justify-center items-center bg-[url(/img/palm-leafs.jpg)] bg-cover bg-bottom bg-no-repeat">
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-primary/50"></div>
+                    <h3 className={rufina.className + " text-xl lg:text-5xl text-white text-center z-10"}>About Our Founder</h3>
+                </div>
             </div>
             <div className="w-full max-w-7xl mx-auto">
                 <div className="px-5 lg:px-10 text-sm lg:text-2xl lg:leading-9 text-justify">
