@@ -110,7 +110,7 @@ const PalmGallery = () => {
                         // pagination: true,
                         loop={true}
                         autoplay={{
-                            delay: 5000, // Autoplay interval in milliseconds (3 seconds in this example)
+                            delay: 5000,
                         }}
                         init={false}
                     >

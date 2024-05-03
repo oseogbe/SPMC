@@ -1,10 +1,13 @@
-"use client"
+"use client";
+
+import { useCallback, useMemo, useState } from "react";
+import Image from "next/image";
 /* eslint-disable @next/next/no-img-element */
+import ScrollToTop from "react-scroll-to-top";
 
 import { rufina } from "@/app/fonts";
-import { Pagination } from "@mui/material";
-import Image from "next/image";
-import ScrollToTop from "react-scroll-to-top";
+import Lightbox from "@/app/components/Lightbox";
+
 
 const Gallery = () => {
     const gardenPics = [
@@ -46,6 +49,14 @@ const Gallery = () => {
         "/img/garden/38.png",
     ];
 
+    const [isOpen, setIsOpen] = useState(false);
+    const [imageIndex, setImageIndex] = useState(0);
+
+    const viewImage = useCallback((index) => {
+        setIsOpen(true);
+        setImageIndex(index);
+    }, []);
+
     return (
         <div className="pt-[84px] lg:pt-18">
             <div className="relative w-full h-24 lg:h-32">
@@ -58,10 +69,11 @@ const Gallery = () => {
             <div className="w-full max-w-7xl mx-auto">
                 <div className="columns-2 md:columns-3 lg:columns-4 gap-2 md:gap-5 space-y-2 md:space-y-5 px-5 lg:px-10 my-8 lg:my-16">
                     {
-                        gardenPics.map((pic) => (
+                        gardenPics.map((pic, i) => (
                             <div
                                 key={pic}
-                                className="overflow-hidden"
+                                className="overflow-hidden cursor-pointer"
+                                onClick={() => viewImage(i)}
                             >
                                 <Image
                                     src={pic}
@@ -83,6 +95,14 @@ const Gallery = () => {
                     <Pagination count={10} variant="outlined" shape="rounded" size="large" />
                 </div> */}
             </div>
+            <Lightbox
+                isOpen={isOpen}
+                onClose={() => setIsOpen(false)}
+                index={imageIndex}
+                slides={gardenPics.map(image => ({
+                    src: image
+                }))}
+            />
             <ScrollToTop
                 smooth
                 top={1000}
