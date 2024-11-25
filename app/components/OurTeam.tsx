@@ -18,7 +18,7 @@ const OurTeam = () => {
         {
             name: "Egbo Chinonso P.",
             role: "Head of Operation",
-            image: "/img/team/user1.png"
+            image: "/img/team/chinonso.jpeg"
         },
         {
             name: "Ajogbor Arotimme E.",
@@ -34,7 +34,7 @@ const OurTeam = () => {
                 <div className="text-center">
                     <h3 className={rufina.className + " text-secondary text-3xl lg:text-5xl font-bold"}>Our Team</h3>
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 mt-6 lg:mt-16">
+                <div className="grid lg:grid-cols-4 gap-4 lg:gap-8 mt-6 lg:mt-16">
                     {teamMembers.map((member, i) => (
                         <a key={i} className="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition" href="#">
                             <Image
@@ -42,6 +42,7 @@ const OurTeam = () => {
                                 height={300}
                                 src={member.image}
                                 alt={member.name}
+                                className="h-[300px] w-full object-cover object-top"
                             />
                             <div className="p-4 md:p-5 text-center">
                                 <h5 className="text-xs lg:text-lg font-bold text-secondary">
