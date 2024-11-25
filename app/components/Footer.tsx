@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="h-9 bg-[#E7F1E9] flex items-center justify-center text-center text-sm lg:text-base text-secondary">
-                <p>Copyright © 2023 Sarius Palmetum & Botanical Garden</p>
+                <p>Copyright © { new Date().getFullYear() } Sarius Palmetum & Botanical Garden</p>
             </div>
         </>
     )
