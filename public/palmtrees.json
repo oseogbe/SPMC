@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Areca Palm",
+        "info": "",
+        "image": "/img/trees/areca-palm.png"
+    },
+    {
+        "name": "Bamboo Palm",
+        "info": "",
+        "image": "/img/trees/bamboo-palm.png"
+    },
+    {
+        "name": "Bottle Palm",
+        "info": "",
+        "image": "/img/trees/bottle-palm.jpg"
+    },
+    {
+        "name": "Canary Island Date Palm",
+        "info": "",
+        "image": "/img/trees/canary-island-date-palm.png"
+    }
+]
