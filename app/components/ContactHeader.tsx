@@ -59,7 +59,7 @@ const ContactHeader = () => {
                         className="lg:-ml-4"
                     />
                 </Link>
-                <ul className="hidden text-lg text-primary space-x-8 md:flex md:text-xl">
+                <ul className="hidden text-primary space-x-8 md:flex font-semibold">
                     {
                         links.map((link) => (
                             <li key={link.name}>
@@ -108,7 +108,7 @@ const ContactHeader = () => {
                             />
 
                             {/* Navigation Links */}
-                            <ul className="flex flex-col text-center text-lg text-primary space-y-8">
+                            <ul className="flex flex-col text-center font-semibold text-primary space-y-8">
                                 {
                                     links.map((link) => (
                                         <li key={link.name}>
