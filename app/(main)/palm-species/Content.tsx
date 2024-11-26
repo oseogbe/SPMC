@@ -82,10 +82,10 @@ const Content = ({
                                 src={tree.image}
                                 alt={`Palm Tree ${tree.name}`}
                                 fill
-                                className="group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                                className="scale-105 group-hover:scale-110 transition-transform duration-500 ease-in-out"
                             />
                             <div className="absolute bottom-0 w-full bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                                <h3 className="text-lg font-bold text-secondary">
+                                <h3 className="text-sm font-bold text-secondary">
                                     {tree.name}
                                 </h3>
                                 <p className="mt-1 text-gray-800 dark:text-gray-400">
@@ -97,13 +97,13 @@ const Content = ({
                 </div>
                 <img className="mx-auto my-8 lg:my-16 w-[80%]" src="/img/divider.svg" alt="divider" />
 
-                <div className="flex justify-center px-5 mb-8 md:hidden">
+                {/* <div className="flex justify-center px-5 mb-8 md:hidden">
                     <Pagination count={10} variant="outlined" shape="rounded" size="medium" />
                 </div>
 
                 <div className="hidden md:flex justify-center md:mb-16">
                     <Pagination count={10} variant="outlined" shape="rounded" size="large" />
-                </div>
+                </div> */}
             </div>
             <ScrollToTop
                 smooth

@@ -11,7 +11,7 @@ import ToTop from '../components/ToTop'
 import { fetchPalmTrees } from '../lib/actions'
 
 export default async function Home() {
-  const palmTrees = await fetchPalmTrees()
+  const palmTrees = (await fetchPalmTrees()).slice(0, 8)
 
   return (
     <div>

@@ -75,10 +75,10 @@ const PalmGallery = ({
                                             src={tree.image}
                                             alt={`Palm Tree ${tree.name}`}
                                             fill
-                                            className="group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                                            className="scale-105 group-hover:scale-110 transition-transform duration-500 ease-in-out"
                                         />
                                         <div className="absolute bottom-0 w-full bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                                            <h3 className="text-lg font-bold text-secondary">
+                                            <h3 className="text-sm font-bold text-secondary">
                                                 {tree.name}
                                             </h3>
                                             <p className="mt-1 text-gray-800 dark:text-gray-400">
@@ -101,10 +101,10 @@ const PalmGallery = ({
                                     src={tree.image}
                                     alt={`Palm Tree ${tree.name}`}
                                     fill
-                                    className="group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                                    className="scale-105 group-hover:scale-110 transition-transform duration-500 ease-in-out"
                                 />
                                 <div className="absolute bottom-0 w-full bg-white p-4 md:p-5 text-center lg:translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
-                                    <h3 className="text-lg font-bold text-secondary">
+                                    <h3 className="text-sm font-bold text-secondary">
                                         {tree.name}
                                     </h3>
                                     <p className="mt-1 text-gray-800 dark:text-gray-400">

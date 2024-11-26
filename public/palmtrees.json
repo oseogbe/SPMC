@@ -1,22 +1,157 @@
 [
     {
-        "name": "Areca Palm",
+        "name": "Alexander Palm",
         "info": "",
-        "image": "/img/trees/areca-palm.png"
+        "image": "/img/trees/alexander-palm.png"
     },
     {
-        "name": "Bamboo Palm",
+        "name": "Ampasindavae Palm",
         "info": "",
-        "image": "/img/trees/bamboo-palm.png"
+        "image": "/img/trees/ampasindavae-palm.png"
+    },
+    {
+        "name": "Australian Fan Palm",
+        "info": "",
+        "image": "/img/trees/australian-fan-palm.png"
+    },
+    {
+        "name": "Bangalow Palm",
+        "info": "",
+        "image": "/img/trees/bangalow-palm-2.png"
+    },
+    {
+        "name": "Bismarck Palm",
+        "info": "",
+        "image": "/img/trees/bismarck-palm.png"
+    },
+    {
+        "name": "Blue Cane Palm",
+        "info": "",
+        "image": "/img/trees/blue-cane-palm.png"
     },
     {
         "name": "Bottle Palm",
         "info": "",
-        "image": "/img/trees/bottle-palm.jpg"
+        "image": "/img/trees/bottle-palm-2.png"
     },
     {
         "name": "Canary Island Date Palm",
         "info": "",
-        "image": "/img/trees/canary-island-date-palm.png"
+        "image": "/img/trees/canary-island-date-palm-2.png"
+    },
+    {
+        "name": "Carnarvon Gorge Palm",
+        "info": "",
+        "image": "/img/trees/carnarvon-gorge-palm.png"
+    },
+    {
+        "name": "Chinese Fan Palm",
+        "info": "",
+        "image": "/img/trees/chinese-fan-palm.png"
+    },
+    {
+        "name": "Coconut Palm",
+        "info": "",
+        "image": "/img/trees/coconut-palm.png"
+    },
+    {
+        "name": "Dwarf Area Catechu Palm",
+        "info": "",
+        "image": "/img/trees/dwarf-areca-catechu-palm.png"
+    },
+    {
+        "name": "Dwarf Date Palm",
+        "info": "",
+        "image": "/img/trees/dwarf-date-palm.png"
+    },
+    {
+        "name": "Fine Leaf Palm",
+        "info": "",
+        "image": "/img/trees/fine-leaf-palm.png"
+    },
+    {
+        "name": "Foxtail Palm",
+        "info": "",
+        "image": "/img/trees/foxtail-palm.png"
+    },
+    {
+        "name": "Golden Cane Palm",
+        "info": "",
+        "image": "/img/trees/golden-cane-palm.png"
+    },
+    {
+        "name": "Hurricane Palm",
+        "info": "",
+        "image": "/img/trees/hurricane-palm.png"
+    },
+    {
+        "name": "Kentia Palm",
+        "info": "",
+        "image": "/img/trees/kentia-palm-2.png"
+    },
+    {
+        "name": "King Palm",
+        "info": "",
+        "image": "/img/trees/king-palm.png"
+    },
+    {
+        "name": "Madagascar Cane Palm",
+        "info": "",
+        "image": "/img/trees/madagascar-cane-palm.png"
+    },
+    {
+        "name": "Malay Dwarf Coconut Palm",
+        "info": "",
+        "image": "/img/trees/malay-dwarf-coconut-palm.png"
+    },
+    {
+        "name": "Manambe Palm",
+        "info": "",
+        "image": "/img/trees/manambe-palm.png"
+    },
+    {
+        "name": "Queensland Black Palm",
+        "info": "",
+        "image": "/img/trees/queensland-black-palm.png"
+    },
+    {
+        "name": "Redneck Palm",
+        "info": "",
+        "image": "/img/trees/redneck-palm.png"
+    },
+    {
+        "name": "Rigid Fan Palm",
+        "info": "",
+        "image": "/img/trees/rigid-fan-palm.png"
+    },
+    {
+        "name": "Sago Palm",
+        "info": "",
+        "image": "/img/trees/sago-palm.png"
+    },
+    {
+        "name": "Senegal Date Palm",
+        "info": "",
+        "image": "/img/trees/senegal-date-palm.png"
+    },
+    {
+        "name": "Spindle Palm",
+        "info": "",
+        "image": "/img/trees/spindle-palm-2.png"
+    },
+    {
+        "name": "Teddy Bear Palm",
+        "info": "",
+        "image": "/img/trees/teddy-bear-palm.png"
+    },
+    {
+        "name": "Triangle Palm",
+        "info": "",
+        "image": "/img/trees/triangle-palm.png"
+    },
+    {
+        "name": "Triple Crown Palm",
+        "info": "",
+        "image": "/img/trees/triple-crown-palm.png"
     }
 ]
