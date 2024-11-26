@@ -14,7 +14,7 @@ const Contact = () => {
                                 <img className="h-3 lg:h-6 mt-2" src="/img/contact-3-lines.svg" alt="" />
                             </div>
                         </div>
-                        <p className="mt-7 text-sm lg:text-xl">Lorem ipsum dolor sit amet consectetur. Turpis amet et elementum in vestibulum leo. Tortor quisque malesuada sed nunc platea eget habitasse.</p>
+                        <p className="mt-7 text-sm lg:text-xl">For inquiries, event bookings, guided tours, or palm tree purchases, feel free to reach out to us.</p>
                         <div className="mt-5 lg:mt-9 space-y-5 lg:space-y-9">
                             <div className="flex items-center space-x-3 lg:space-x-6">
                                 <img className="w-8 lg:w-[56px]" src="/img/map-marker.svg" alt="" />

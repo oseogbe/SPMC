@@ -10,7 +10,7 @@ const Footer = () => {
                         <h3 className="text-lg lg:text-2xl text-white font-bold">About Sarius Palmetum Botanical Garden</h3>
                         <img className="mt-3 w-3/5" src="/img/footer-3-lines.svg" alt="" />
                         <p className="mt-4 lg:mt-8 lg:text-lg text-white">
-                            Lorem ipsum dolor sit amet consectetur. Tincidunt ultrices ut egestas dictum bibendum ultrices leo vulputate commodo. Dis mauris velit sagittis volutpat commodo blandit. Neque habitant integer eget tristique suspendisse et cursus. Tristique massa
+                            Sarius Palmetum Botanical Garden is a serene and scenic garden known for its vast collection of palms and exotic plants - a popular spot for relaxation, photography, and events.
                         </p>
                     </div>
                     <div className="flex-1 pt-8 lg:pt-0 pr-8 lg:px-16">
@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="h-9 bg-[#E7F1E9] flex items-center justify-center text-center text-sm lg:text-base text-secondary">
-                <p>Copyright © { new Date().getFullYear() } Sarius Palmetum & Botanical Garden</p>
+                <p>Copyright © {new Date().getFullYear()} Sarius Palmetum & Botanical Garden</p>
             </div>
         </>
     )
