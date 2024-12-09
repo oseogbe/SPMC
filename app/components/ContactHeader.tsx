@@ -59,7 +59,7 @@ const ContactHeader = () => {
                         className="lg:-ml-4"
                     />
                 </Link>
-                <ul className="hidden text-primary space-x-8 md:flex font-semibold">
+                <ul className="hidden text-primary space-x-8 md:flex font-medium">
                     {
                         links.map((link) => (
                             <li key={link.name}>

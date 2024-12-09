@@ -56,7 +56,7 @@ const Header = () => {
                         priority
                     />
                 </Link>
-                <ul className="hidden text-primary space-x-6 md:flex font-semibold">
+                <ul className="hidden text-primary space-x-6 md:flex font-medium">
                     {
                         links.map((link) => (
                             <li key={link.name}>
